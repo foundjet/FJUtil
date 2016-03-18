@@ -12,12 +12,15 @@ public class TestProgram {
 	}
 	
 	public static void testQrcode() {
-		String content = "Test QRCode!" 
-                + "\n https://www.baidu.com ]"; 
+		// 创捷官网
+		String content = "http://www.foundjet.com"; 
+		
+		// 创捷官网
+//		String content = "http://www.yimalls.com"; 
         
-		String rootPath = "E:/dev/project/OuterProject/HomeIntelligent/note/QRCode/output/";
+		String rootPath = "E:/code/git/foundjet/OpenSource/V1/FJUtil/resource/img/";
         String fileName = "qrfile.png";
-        String logoName = "logoTest.png";
+        String logoName = "logo.png";
         String qrPath = rootPath + fileName;
         String logoPath = rootPath + logoName;
         System.out.println("Write content:" + content);

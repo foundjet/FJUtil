@@ -125,8 +125,8 @@ public class QrcodeHandlerUtil {
             //读取logo图片  
             BufferedImage logo = ImageIO.read(logoImg);  
             //设置二维码大小，太大，会覆盖二维码，此处20%  
-            int logoWidth = logo.getWidth(null) > twodimensioncode.getWidth()*2 /10 ? (twodimensioncode.getWidth()*2 /10) : logo.getWidth(null);  
-            int logoHeight = logo.getHeight(null) > twodimensioncode.getHeight()*2 /10 ? (twodimensioncode.getHeight()*2 /10) : logo.getHeight(null);  
+            int logoWidth = logo.getWidth(null) > twodimensioncode.getWidth()*1 /3 ? (twodimensioncode.getWidth() * 1 /3) : logo.getWidth(null);  
+            int logoHeight = logo.getHeight(null) > twodimensioncode.getHeight()*1 /3 ? (twodimensioncode.getHeight()*1 /3) : logo.getHeight(null);  
             //设置logo图片放置位置  
             //中心  
             int x = (twodimensioncode.getWidth() - logoWidth) / 2;  
